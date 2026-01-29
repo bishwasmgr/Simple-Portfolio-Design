@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome cdn  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -14,66 +15,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Bishwas Thapa Magar</title>
+    <title>Bishwas Portfolio</title>
   </head>
   <body>
-    <input type="checkbox" name="" id="darkmode" />
+    <label for="darkmode"><i class="fa-solid fa-circle-half-stroke"></i></label>
+    <input type="checkbox" name="darkmode" id="darkmode" />
     <div class="wrapper">
-      <!-- dark mode toggle  -->
-
-      <label for="darkmode"
-        ><i class="fa-solid fa-circle-half-stroke"></i>
-      </label>
-      <!-- header  -->
-      <header id="home">
-        <nav>
-          <div class="title">
-            <span>Bishwas</span>
-            <p id="test-line">|</p>
-            <h1 class="job-title">Software Engineer</h1>
+      <!-- dark mode togller  -->
+      <!-- navbar  -->
+      <header>
+        <div class="header container flex">
+          <div class="logo flex">
+            <div class="joti-one-regular">Bishwas</div>
+            <div class="line">Full Stack Developer</div>
           </div>
           <div class="menu">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <ul class="flex navigation">
+              <li><a href="">Home</a></li>
+              <li><a href="">Skills</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
             </ul>
           </div>
-        </nav>
-      </header>
-      <!-- hero  -->
-      <section class="hero-section container">
-        <div class="grid hero">
-          <div class="left flex">
-            <div>Hi I'm <span>Bishwas Thapa</span></div>
-            <div class="tag">Software Engineer</div>
-            <p>I ove coding and build new project.</p>
-            <div>
-              <a href="" download="./images/myimage.png"
-                ><button>
-                  Download CV
-                  <i class="fa-solid fa-download"></i></button
-              ></a>
-            </div>
-          </div>
-
-          <div class="right flex">
-            <img src="/images/myimage.png" alt="" />
-          </div>
         </div>
-      </section>
+      </header>
+      <!-- hero section  -->
 
       <!-- banner section  -->
-
-      <!-- skill section  -->
-
-      <!-- project section  -->
+      <!-- skills section  -->
+      <!-- Project section  -->
+      <!-- about me section  -->
+      <!-- Contact  section  -->
+      <!-- Footer section  -->
     </div>
   </body>
 </html>
