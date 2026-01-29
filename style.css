@@ -4,10 +4,12 @@
   --color-orage: orangered;
 
   --text-color: var(--color-dark);
+  --border-color: var(var(--color-dark));
 
   --dark-bg: var(--color-dark);
   --dark-textclor: white;
   --box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.576);
+  --dark-border-color: white
 }
 html {
   /* scroll-behavior: smooth; */
@@ -56,6 +58,15 @@ a {
 .wrapper {
   background: var(--body-bg);
   min-height: 100vh;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+.title span{
+    border-bottom: 3px solid var(--color-orage);
 }
 
 /* <!-- dark mode togller  --> */
@@ -119,6 +130,8 @@ header .header {
 #darkmode:checked + .wrapper {
   background: var(--dark-bg);
   color: var(--dark-textclor);
+  --dark-border-color: var(var(--dark-border-color));
+  --text-color: var(--dark-text-cloor)
 }
 /* <!-- hero section  --> */
 .hero-section {
@@ -170,8 +183,67 @@ header .header {
 }
 
 /* <!-- banner section  --> */
+.banner {
+    margin-top: 7rem;
+    border: 2px solid  var(--dark-border-color);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    border-radius: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.info-divider {
+    background: grey;
+    width: 2px;
+    height: 70px;
+}
+
+.info-content .icon-container{
+    background-color: var(--color-orage);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--text-color);
+
+}
+
+.info-content div span{
+    font-weight: bolder;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+}
+
+.info-content div p {
+    color: var(--color-orage);
+}
+
 /* <!-- skills section  --> */
+.skills {
+    margin-top: 5rem;
+}
+
+.skills-container {
+    justify-content: space-between;
+}
+
+.skills-container > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-container > div i{
+    font-size: 3rem;
+}
+
 /* <!-- Project section  --> */
 /* <!-- about me section  --> */
 /* <!-- Contact  section  --> */
 /* <!-- Footer section  --> */
+footer{
+    min-height: 30vh;
+    background: #000;
+}
