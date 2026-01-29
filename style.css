@@ -7,6 +7,7 @@
 
   --dark-bg: var(--color-dark);
   --dark-textclor: white;
+  --box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.576);
 }
 html {
   /* scroll-behavior: smooth; */
@@ -72,10 +73,10 @@ a {
 
 /* <!-- navbar  --> */
 header {
-  box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.576);
+  box-shadow: var(--box-shadow);
   position: sticky;
   top: 0;
-  background: var(--body-bg);
+  background: inherit);
 }
 
 header .header {
@@ -117,9 +118,57 @@ header .header {
 /* applying dark mode  */
 #darkmode:checked + .wrapper {
   background: var(--dark-bg);
-  color: var(--dark-text-cloor);
+  color: var(--dark-textclor);
 }
 /* <!-- hero section  --> */
+.hero-section {
+  margin-top: 5rem;
+  max-height: 60vh;
+}
+
+.hero {
+  background: var(--color-orage);
+  grid-template-areas: "left right";
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.left {
+  grid-area: left;
+  flex-direction: column;
+  margin-left: 10vw;
+  justify-content: center;
+}
+
+.left div span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.left .tag {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+
+.left button {
+  background: var(--body-bg);
+  color: var(--dark-text-cloor);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.right {
+  grid-area: right;
+  justify-content: end;
+  align-items: center;
+  margin-top: -4rem;
+}
+
+.right img {
+  height: 115%;
+}
+
 /* <!-- banner section  --> */
 /* <!-- skills section  --> */
 /* <!-- Project section  --> */
