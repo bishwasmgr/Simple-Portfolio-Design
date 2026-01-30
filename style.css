@@ -12,7 +12,7 @@
   --dark-border-color: white
 }
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 * {
@@ -137,6 +137,7 @@ header .header {
 .hero-section {
   margin-top: 5rem;
   max-height: 60vh;
+  padding-top: 7rem;
 }
 
 .hero {
@@ -240,10 +241,131 @@ header .header {
 }
 
 /* <!-- Project section  --> */
+.projects {
+    margin-top: 5rem;
+}
+
+.projects .project-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.projects .project-card {
+box-shadow: var(--box-shadow);
+border-radius: 5px;
+padding-bottom: 3rem;
+}
+
+.project-card .links{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+   
+
 /* <!-- about me section  --> */
+.about{
+    margin-top: 5rem;
+    background: rgba(153, 205, 50, 0.459);
+    padding: 7rem;
+}
+
+.about .myImg{
+    width: 40%;
+}
+
+.about .my-bio h2{
+    letter-spacing: 5px;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about .my-bio p:nth-child(4), .my-bio .tag{
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.my-bio .tag + div > span {
+    padding: .8rem 1.2rem;
+    border-radius: 5px;
+    
+}
+
+.my-bio .tag + div > span:hover{
+    background: grey;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
 /* <!-- Contact  section  --> */
+.contact{
+    padding: 7rem 0;
+    width: 400px;
+    margin: auto;
+     margin-top: 5rem;
+}
+
+.contact .social{
+    font-size: 4rem;
+    justify-content: space-between;
+}
+.contact h3{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.contact .email-section{
+    background: black;
+    color: white;
+    border-radius: 40px;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.contact .email-section span{
+    font-size: 1.5rem;
+}
+
+.contact .email-icon{
+    background: var(--color-orage);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
 /* <!-- Footer section  --> */
 footer{
     min-height: 30vh;
     background: #000;
+    color: aliceblue;
+    margin-top: 5rem;
+    flex-direction: column;
+}
+
+footer .top {
+    margin-bottom: 5rem;
+    gap: 5rem;
+}
+
+footer .top ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+footer .top ul li{
+    line-height: 1.5rem;
+
+}
+
+.goUp{
+    font-size: 3rem;
+    background-color: var(--color-orage);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
 }
